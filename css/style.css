@@ -1,30 +1,82 @@
+:root {
+--primary-text-color: #757575;
+--title-text-color: #212121;;
+--accent-color: #2196F3;
+--white-text-color: #FFFFFF;
+--address-text-color: rgba(255, 255, 255, 0.6);
+--background-color-service-footer:  #2F303A;
+--background-color-team: #F5F4FA;
+--logo-text-color: #000000;
+}
+
+/* primary-text-color color-balck: #212121;*/
+/* akcent-blue: color: #2196F3; */
+/* description-text-color-white: color: #FFFFFF;*/
+/* text-color-grey: color: #757575; */
+/* adress-color: color: rgba(255, 255, 255, 0.6);*/
+
+
 body {
     font-family: "Roboto", sans-serif;
-    font-style: normal;
-}    
+    color: var(--primary-text-color);
+    }    
+
+.header {
+    background-color: var(--white-text-color);
+}
+
+.order-servise {
+    background-color: var(--background-color-service-footer);
+}
+
+
+.our-team {
+    background-color: var(--background-color-team);
+}
+
+.employee-name, 
+.employee-position {
+    background-color: var(--white-text-color);
+}
+
+footer {
+    background-color: var(--background-color-service-footer);
+}
+
 
 .logo {
-    font-family: Raleway;
+    font-family: "Raleway", sans-serif;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 26px;
     line-height: 1.192;
 /* identical to box height */
     letter-spacing: 0.03em;
-    color: #000000;
+    color: var(--logo-text-color);
     list-style: none;
     text-decoration: none;
 }
 
 .logo-name-part {
-    font-family: Raleway;
+    font-family: "Raleway", sans-serif;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 26px;
     line-height: 1.192;
     /* identical to box height */
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: var(--accent-color);
+}
+
+.logo-footer {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+    color: var(--white-text-color);
 }
 
 .navigation-list {
@@ -36,14 +88,9 @@ body {
     font-size: 14px;
     line-height: 1.143;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--title-text-color);
     list-style: none;
     text-decoration: none;
-}
-
-.navigation-list-link:hover,
-.navigation-list-link:focus {
-    color: #2196F3;
 }
 
 .contacts { 
@@ -56,17 +103,17 @@ body {
     font-size: 14px;
     line-height: 1.143;
     letter-spacing: 0.02em;
-    color: #757575;
+    color: var(--primary-text-color);
     text-decoration: none;
 }
 
 .header-email-link:hover,
-.header-email-link:focus {
-    color: #2196F3;
-}
+.header-email-link:focus,
 .header-tel-link:hover,
-.header-tel-link:focus {
-    color: #2196F3;
+.header-tel-link:focus,
+.navigation-list-link:hover,
+.navigation-list-link:focus {
+    color: var(--accent-color);
 }
 
 .description {
@@ -77,12 +124,13 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    color: var(--white-text-color);
     }
 
-    .modal-button {
+.modal-button {
     font-family: "Roboto", sans-serif; 
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
     /* identical to box height, or 187% */
@@ -90,7 +138,10 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--white-text-color);
+    background:var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
     }
 
 .advantages-list {
@@ -98,12 +149,12 @@ body {
 }
 
 .advantages-description {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.143;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #212121;
+    color: var(--title-text-color);
 }
 
 .advantages-text {
@@ -112,7 +163,7 @@ body {
     line-height: 1.714;
     /* or 171% */
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--primary-text-color);
 }
 
 .work-description-list {
@@ -120,12 +171,12 @@ body {
 }
 
 .section-description {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.166;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--title-text-color);
 }
 
 .team-list{
@@ -139,7 +190,7 @@ body {
     /* identical to box height */
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--title-text-color);
 }
 
 .employee-position {
@@ -153,6 +204,7 @@ body {
 
 .address {
     font-style: normal;
+    color: var(--white-text-color);
     }
 
 .address-street {
@@ -174,7 +226,7 @@ body {
     /* identical to box height, or 162% */
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--title-text-color);
 }
 
 .portfolio-button:hover,
@@ -185,7 +237,7 @@ body {
     /* identical to box height, or 162% */
     text-align: center;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--white-text-color);
 }
 
 .our-portfolio-list {
@@ -193,12 +245,12 @@ body {
 }
 
 .portfolio-name {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 18px;
     line-height: 2.000;
     /* identical to box height, or 200% */
     letter-spacing: 0.06em;
-    color: #212121;
+    color: var(--title-text-color);
 }
 
 .portfolio-type {
@@ -207,5 +259,15 @@ body {
     line-height: 1.875;
     /* identical to box height, or 187% */
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--primary-text-color);
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+    background: var(--accent-color);
+    cursor: pointer;
+}
+
+.navigation-list .navigation-list-link .current {
+    color: var(--accent-color)
 }
