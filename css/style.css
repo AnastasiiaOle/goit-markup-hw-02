@@ -39,10 +39,14 @@ body {
 .order-servise {
     background-color: var(--background-color-service-footer);
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .our-team {
     background-color: var(--background-color-team);
+    padding-bottom: 94px;
+    padding-top: 94px;
 }
 
 .employee-name, 
@@ -130,11 +134,13 @@ footer {
 
 .advantages {
     padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 47px;
     }
+
 
 .advantages-description {
     margin-top: 0px;
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.143;
@@ -144,6 +150,8 @@ footer {
 }
 
 .advantages-text {
+    margin-top: 0;
+    margin-bottom: 0;
     font-weight: normal;
     font-size: 14px;
     line-height: 1.714;
@@ -151,7 +159,12 @@ footer {
     color: var(--primary-text-color);
 }
 
+.advantages-item:not(:last-child) {
+    margin-right: 30px;
+}
+
 .work-description {
+    padding-top: 47px;
     padding-bottom: 94px;
 }
 
