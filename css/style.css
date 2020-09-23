@@ -29,18 +29,27 @@ body {
 }
 
 .container {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     width: 1230px;
     padding-left: 15px;
     padding-right: 15px;
 }
 
+.main {
+    display: flex;
+    align-items: center;
+}
 
 .order-servise {
     background-color: var(--background-color-service-footer);
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+}
+
+.advantages-list {
+    display: flex;
 }
 
 .our-team {
@@ -57,7 +66,6 @@ body {
 footer {
     background-color: var(--background-color-service-footer);
 }
-
 
 .logo {
     font-family: "Raleway", sans-serif;
@@ -79,7 +87,19 @@ footer {
     color: var(--white-text-color);
 }
  
+.navigation-list {
+    display: flex;
+
+}
+
+.navigation-list-item:not(:last-child) {
+    margin-right: 50px;
+}
+
 .navigation-list-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.143;
@@ -96,7 +116,6 @@ footer {
     color: var(--primary-text-color);
 }
 
-
 .header-email-link:hover,
 .header-email-link:focus,
 .header-tel-link:hover,
@@ -104,7 +123,16 @@ footer {
 .navigation-list-link:hover,
 .navigation-list-link:focus {
     color: var(--accent-color);
+} 
+
+.contacts {
+    display: flex;
 }
+
+.header-email-link {
+    margin-right: 50px;
+}
+
 
 .description {
     margin-top: 0px;
@@ -206,6 +234,33 @@ footer {
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
+}
+
+.portfolio-list {
+    display: flex;
+}
+
+..portfolio-item:not(:last-child) {
+    margin: 8px;
+}
+
+.our-portfolio-item {
+    width: calc((100% - 60px)/3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.our-portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.our-portfolio-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.our-portfolio-item:nth-last-child(-n+3) {
+    margin-bottom: 0;
 }
 
 .portfolio-button {
